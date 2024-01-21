@@ -921,7 +921,8 @@
       // Preloader script
       document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
-          document.querySelector(".loader").style.display = "none";
+          // I removed .style.display="none" after (".loader")
+          document.querySelector(".loader");
         }, 2000);
       });
     </script>
