@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -437,6 +438,7 @@ input[type="file"] {
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: 0;
 }
 
 .navbar-logo {
@@ -721,12 +723,23 @@ input[type="file"] {
   background-color: #e0f7fa;
 }
 
+.about-heading {
+  text-align: center;
+}
+
 .line {
   display: flex;
   margin-left: 2rem;
   font-size: 1.1rem;
   text-shadow: 0.5px 0.4px black;
+  padding-top: 20px;
 }
+
+span.line-icon {
+  padding-right: 10px;
+}
+
+
 
 #xp {
   display: flex;
