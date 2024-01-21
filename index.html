@@ -66,7 +66,7 @@
             <div class="leftSide"></div>
             <div class="rightSide"></div>
           </div>
-          <li class="nav-item" id="li_home">
+          <li class="nav-item active" id="li_home">
             <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item" id="li_about">
@@ -921,7 +921,11 @@
       // Preloader script
       document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
-          document.querySelector(".loader").style.display = "none";
+          // The cause of the problem is from ".style.display = "none" "
+          // document.querySelector(".loader").style.display = "none";
+
+          // This is the new code for it
+          document.querySelector(".loader");
         }, 2000);
       });
     </script>
